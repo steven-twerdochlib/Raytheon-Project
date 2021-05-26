@@ -10,7 +10,8 @@ pipeline {
     stage('Test Stage') {
       steps {
         echo 'Testing'
-        bat 'c: cd C:\\Program Files\\SmartBear\\SoapUI-5.6.0\\bin\\. testrunner.bat -s"TestSuite 1" -c"TestCase 1" C:\\Users\\Steven\\Documents\\SOAPUI\\RESTAPIgenderGuess.xml'
+        bat 'c: cd C:\\Program Files\\SmartBear\\SoapUI-5.6.0\\bin\\.'
+        bat 'testrunner.bat -s"TestSuite 1" -c"TestCase 1" C:\\Users\\Steven\\Documents\\SOAPUI\\RESTAPIgenderGuess.xml'
       }
     }
 
